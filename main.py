@@ -13,6 +13,7 @@ def translate(word):
             ans = input("Did you mean %s instead? Please enter Y for Yes and N for No: " % get_close_matches(word, data.keys())[i])
             if ans.lower() == "y":
                 return data[get_close_matches(word, data.keys())[i]]
+                break
             elif ans.lower() == "n":
                 pass
             else:
